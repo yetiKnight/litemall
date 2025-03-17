@@ -58,6 +58,15 @@ public class WxOrderController {
 
     /**
      * 提交订单
+     * 1. 验证用户登录状态
+     * 2. 验证收货地址
+     * 3. 验证商品库存
+     * 4. 验证优惠券是否可用
+     * 5. 计算订单费用
+     * 6. 生成订单记录
+     * 7. 减少商品库存
+     * 8. 清空购物车对应商品
+     * 9. 返回订单ID和支付信息
      *
      * @param userId 用户ID
      * @param body   订单信息，{ cartId：xxx, addressId: xxx, couponId: xxx, message: xxx, grouponRulesId: xxx,  grouponLinkId: xxx}

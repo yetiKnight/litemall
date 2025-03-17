@@ -7,16 +7,16 @@ const app = getApp();
 
 Page({
   data: {
-    newGoods: [],
-    hotGoods: [],
-    topics: [],
-    brands: [],
+    newGoods: [],// 新品首发
+    hotGoods: [],// 人气推荐
+    topics: [],// 专题精选
+    brands: [],// 品牌制造商
     groupons: [],
-    floorGoods: [],
-    banner: [],
-    channel: [],
-    coupon: [],
-    goodsCount: 0
+    floorGoods: [],// 分类商品
+    banner: [],// 轮播图数据
+    channel: [],// 分类导航数据
+    coupon: [],// 优惠券数据
+    goodsCount: 0 // 商品总数
   },
 
   onShareAppMessage: function() {
